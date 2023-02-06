@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/itemprice"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/itemname"
+        android:layout_width="178dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="600dp"
+        android:layout_marginLeft="17dp"
+        android:hint="Item Name"
+        app:layout_constraintBottom_toTopOf="@id/itemurl"
+        app:layout_constraintEnd_toStartOf="@id/itemprice"
+        app:layout_constraintHorizontal_bias="0.24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></EditText>
+
+    <EditText
+        android:id="@+id/itemprice"
+        android:layout_width="71dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="600dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="100dp"
+        android:hint="Price"
+        app:layout_constraintBottom_toTopOf="@id/submit"
+        app:layout_constraintStart_toEndOf="@id/itemname"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.666"></EditText>
+
+    <EditText
+        android:id="@+id/itemurl"
+        android:layout_width="242dp"
+        android:layout_height="48dp"
+        android:hint="Url Or Store"
+        android:layout_marginLeft="17dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toStartOf="@id/submit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/itemname"></EditText>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="94dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="670dp"
+        android:layout_marginBottom="18dp"
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/itemurl"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
